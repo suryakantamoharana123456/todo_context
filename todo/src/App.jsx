@@ -26,7 +26,7 @@ export default function App() {
   }
 
   useEffect (()=>{
-    const todos  = JSON.parse(localStorage.getItem("todos"))
+    const todos  = JSON.parse(localStorage.getItem("todo"))
     if(todos && todos.length > 0){
       setTodos(todos)
     }
